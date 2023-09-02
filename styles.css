@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_responsive */
+
+@font-face {
+	font-family: 'Computer';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Computer'), url(fonts/Computer.woff) format('woff');
+}
+
+p {
+  color: white;
+  font-family: Computer;
+  font-size:85%;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 20px;
+  height: 450px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 856px) {
+  .column {
+    width: 100%;
+  }
+}
+

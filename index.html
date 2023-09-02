@@ -2,34 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_responsive */
-
-/* Create two equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  height: 600px; /* Should be removed. Only for demonstration */
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 916px) {
-  .column {
-    width: 100%;
-  }
-}
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <body style="background-color:black;">
@@ -38,28 +11,30 @@
 <p>Resize the browser window to see the responsive effect (the columns will stack on top of each other instead of floating next to each other, when the screen is less than 600px wide).</p>
 -->
 <div class="row">
-  <div class="column" style="background-color:black;">
-  <img src = "./images/big_red.png" >
-  <pre style="color:white;">
-  Dr. Adrian Sinclair
+<div class="column" style="background-color:black;">
 
-  Postdoctoral Research Fellow
-  University of British Columbia
+<img src = "./images/big_red.png" >
+<pre style="color:white;">
+Dr. Adrian Sinclair
 
-  Visiting Researcher
-  NRC Herzberg Astronomy and Astrophysics Research Centre
-  </pre>
-  </div>
-  <div class="column" style="background-color:black;">
-  <pre style="color:white;">
-  Cerro Chajnantor Atacama Telescope (CCAT)
-  <a href="https://www.ccatobservatory.org/">https://www.ccatobservatory.org/</a>
+Postdoctoral Research Fellow
+University of British Columbia
 
-  Balloon-borne Large Aperture Submillimeter Telescope
-  - The Next Generation (BLAST-TNG)
-  <a href="https://sites.northwestern.edu/blast/">https://sites.northwestern.edu/blast/</a>
-  </pre>
-  </div>
+Visiting Researcher
+NRC Herzberg Astronomy and Astrophysics Research Centre
+</pre>
+</div>
+<div class="column" style="background-color:black;">
+<p> RESEARCH PROJECTS </p>
+<pre style="color:white;">
+Cerro Chajnantor Atacama Telescope (CCAT)
+<a href="https://www.ccatobservatory.org/">https://www.ccatobservatory.org/</a>
+
+Balloon-borne Large Aperture Submillimeter Telescope
+- The Next Generation (BLAST-TNG)
+<a href="https://sites.northwestern.edu/blast/">https://sites.northwestern.edu/blast/</a>
+</pre>
+</div>
 </div>
 
 </body>
