@@ -10,10 +10,16 @@
 	src: local('Computer'), url(fonts/Computer.woff) format('woff');
 }
 
+pre {
+  color: white;
+  font-family: Courier New;
+  font-size:150%;
+}
+
 p {
   color: white;
   font-family: Computer;
-  font-size:85%;
+  font-size:150%;
 }
 
 /* Create two equal columns that floats next to each other */
@@ -21,7 +27,7 @@ p {
   float: left;
   width: 50%;
   padding: 20px;
-  height: 450px; /* Should be removed. Only for demonstration */
+  height: 600px; /* Should be removed. Only for demonstration */
 }
 
 /* Clear floats after the columns */
@@ -32,7 +38,7 @@ p {
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 856px) {
+@media screen and (max-width: 1500px) {
   .column {
     width: 100%;
   }
